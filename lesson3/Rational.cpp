@@ -1,5 +1,10 @@
 #include "Rational.h"
 
+Rational::~Rational()
+{
+	cout << "Dtor\n";
+}
+
 void Rational::operator *=(Rational num)
 {
 	setMone(mone*num.getMone());
@@ -12,7 +17,7 @@ Rational Rational::operator *(Rational num)
 	tmp.setMechane(mechane*num.getMechane());
 	return tmp;
 }
-Rational Rational::operator +(Rational num)
+ Rational Rational::operator +(const Rational& num) const
 {
 	Rational tmp;
 	tmp.setMone(mone*num.getMechane() +
@@ -38,4 +43,16 @@ Rational Rational::operator++(int u) {
 	Rational temp = *this;
 	mone += mechane;
 	return temp;
+}
+Rational operator+(const Rational& rat, int num) {
+	Rational tmp;
+
+	tmp.setMone(rat.getMone() + num *rat.getMechane()); 	
+	tmp.setMechane(rat.getMechane());
+	return tmp;
+}
+
+ostream& operator<<(ostream& out, const Rational& num)
+{
+	return out<<  num.mone << '/' << num.mechane << endl;
 }
