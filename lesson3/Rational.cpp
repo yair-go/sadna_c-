@@ -44,6 +44,7 @@ Rational Rational::operator++(int u) {
 	mone += mechane;
 	return temp;
 }
+
 Rational operator+(const Rational& rat, int num) {
 	Rational tmp;
 
@@ -55,4 +56,9 @@ Rational operator+(const Rational& rat, int num) {
 ostream& operator<<(ostream& out, const Rational& num)
 {
 	return out<<  num.mone << '/' << num.mechane << endl;
+}
+
+istream& operator >> (istream & in,  Rational & num)
+{
+	return in>>num.mone>>num.mechane;
 }

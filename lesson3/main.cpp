@@ -10,6 +10,8 @@ int main() {
 	cout << "num1+num2="; num3.print();
 	Rational num5 = num1 + 3;
 	cout << "num1 + 3= "; num5.print();
-	cout <<"num5 = " << num5;
+	cout <<"num5 = " << num5 <<"num4 = "<< num4;
+	cin >> num4;
+	cout << "num4 = " << num4;
 	return 0;
 }

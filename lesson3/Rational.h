@@ -39,4 +39,5 @@ public:
 		cout << mone << '/' << mechane << endl;
 	}
 	friend ostream& operator<<(ostream& out, const Rational& num);
+	friend istream& operator>>(istream& in,  Rational& num);
 };
