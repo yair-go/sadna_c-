@@ -26,5 +26,4 @@ const  char*  const MyTypes::exception_strings[] = {
 	"ERROR : account number must be unique!",
 	"ERROR : unknown Expception",
 	"ERROR :cannot withdraw more than 2500 NIS!"
-
 };
