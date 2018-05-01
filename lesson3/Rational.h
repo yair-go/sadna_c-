@@ -21,11 +21,11 @@ public:
 	//view functions
 	int getMone() const { return mone; }
 	int getMechane() const { return mechane; }
-
+	~Rational();
 	//operations
 	void operator*=(Rational);
 	Rational operator*(Rational);
-	Rational operator+(Rational);
+	Rational operator+(const Rational&) const;
 	Rational operator-(Rational);
 	Rational operator/(Rational);
 	bool operator==(const Rational&) const;
@@ -38,4 +38,6 @@ public:
 	void print() const {
 		cout << mone << '/' << mechane << endl;
 	}
+	friend ostream& operator<<(ostream& out, const Rational& num);
+	friend istream& operator>>(istream& in,  Rational& num);
 };

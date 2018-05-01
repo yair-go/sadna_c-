@@ -8,7 +8,8 @@ private:
 public:
 	int getArea();
 	void setLength(int);
-	Rect(int a = 0, int b = 0);
+	
+	Rect(int a=0 , int b=0);
 	Rect(const Rect&);
 
 	~Rect();

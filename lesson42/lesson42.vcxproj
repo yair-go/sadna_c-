@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B8CE7399-D5D3-4DEA-A8E3-62274502005E}</ProjectGuid>
+    <ProjectGuid>{ADA5287E-5CA9-4A39-986B-AB79325F3B0A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>lesson1</RootNamespace>
+    <RootNamespace>lesson42</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,13 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="Rect.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="MyTypes.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="MyTypes.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
