@@ -1,5 +1,6 @@
 #include "Clock.h"
 #include "Account.h"
+#include "main.h"
 using namespace std;
 enum action
 {
@@ -37,9 +38,9 @@ int findAccount(Account* bank, int size)
 }
 void printTransaction(Account a, action ac)
 {
-	Clock c;
-	cout << c << "\t";
-	;
+	/*Clock c;
+	cout << c << "\t";*/
+	
 	switch (ac)
 	{
 	case balance: cout << "account #: " << a.getAccountNumber() << "\t";

@@ -1,12 +1,10 @@
 #include "Account.h"
 
 
-#include "Account.h"
-
 int Account::sumDeposit = 0;
 int Account::sumWithdraw = 0;
 
-Account::Account(int a = 0, int b = 0, int c = 0)
+Account::Account(int a, int b , int c )
 {
 	accountNumber = a;
 	balance = b;
@@ -47,9 +45,17 @@ istream &operator >> (istream & incoming, Account & num) {
 	incoming >> accountNumber >> code;
 	if (code < 1000) throw MyTypes::exception_strings[MyTypes::CODE_DIGIT];
 	if (isExist(accountNumber)) throw MyTypes::exception_strings[MyTypes::NOT_UNIQ_ACCOUNT_NUMBER];
-	//num.balance = 0; 
+	num.balance = 0; 
 	num.code = code;
 	return incoming;
+}
+
+void Account::deposit(int am)
+{
+}
+
+void Account::withdraw(int am)
+{
 }
 
 int Account::getSumWithdraw() {
@@ -57,4 +63,9 @@ int Account::getSumWithdraw() {
 }
 int Account::getSumDeposit() {
 	return sumDeposit;
+}
+
+bool isExist(int accuntNumber) {
+
+	return false;
 }

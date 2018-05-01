@@ -23,7 +23,8 @@ public:
 	int getBalance();
 	int getCode();
 	friend istream &operator >> (istream & incoming, Account &);
-	
+	void deposit(int am);
+	void withdraw(int am);
 	static int getSumWithdraw();
 	static int getSumDeposit();
 };
