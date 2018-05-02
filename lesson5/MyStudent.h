@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+
+using namespace std;
 class MyStudent
 {
 private:
@@ -8,5 +11,6 @@ public:
 	~MyStudent();
 	//void setId(int id);
 	int getId();
+	void print();
 };
 

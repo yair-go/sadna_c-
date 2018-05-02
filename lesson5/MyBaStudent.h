@@ -1,7 +1,6 @@
 #pragma once
 #include "MyStudent.h"
-class MyBaStudent :
-	public MyStudent
+class MyBaStudent : public MyStudent
 {
 private:
 	int _grade;
@@ -10,6 +9,7 @@ public:
 	~MyBaStudent();
 	void setGrade(int);
 	int getGrade();
+	void print();
 };
 
 

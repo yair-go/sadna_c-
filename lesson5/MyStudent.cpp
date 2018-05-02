@@ -12,6 +12,12 @@ MyStudent::MyStudent(int id)
 MyStudent::~MyStudent()
 {
 }
-int MyStudent::getId() {
+int MyStudent::getId() 
+{
 	return _id;
+}
+
+void MyStudent::print()
+{
+	cout << "id : " << _id << endl;
 }

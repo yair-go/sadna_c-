@@ -2,9 +2,9 @@
 
 
 
-MyBaStudent::MyBaStudent(int id) //:Student(id)
+MyBaStudent::MyBaStudent(int id) :MyStudent(id)
 {
-
+	
 }
 
 MyBaStudent::~MyBaStudent()
@@ -17,4 +17,9 @@ void MyBaStudent::setGrade(int grade)
 }
 int MyBaStudent::getGrade() {
 	return _grade;
+}
+
+void MyBaStudent::print()
+{
+	cout << "id : " << getId() << "Grade :"<<_grade<< endl;
 }
