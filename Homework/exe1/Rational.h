@@ -8,6 +8,7 @@ class Rational
 {
 	int mechane;
 	int mone;
+	Rational reduce();
 
 public:
 	void setMone(int);
