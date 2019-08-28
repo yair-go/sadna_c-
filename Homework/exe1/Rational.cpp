@@ -1,6 +1,11 @@
 #include "Rational.h"
 
 
+Rational Rational::reduce()
+{
+	Rational temp;
+	return temp;
+}
 
 void Rational::setMone(int mone)
 {
