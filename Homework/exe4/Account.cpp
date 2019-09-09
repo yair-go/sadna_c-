@@ -44,8 +44,8 @@ istream &operator >> (istream & incoming, Account & num) {
 
 	incoming >> accountNumber >> code;
 	if (code < 1000) throw MyTypes::exception_strings[MyTypes::CODE_DIGIT];
-	throw new exception(MyTypes::exception_strings[MyTypes::CODE_DIGIT]);
-	//if (isExist(accountNumber)) throw MyTypes::exception_strings[MyTypes::NOT_UNIQ_ACCOUNT_NUMBER];
+	// if (code < 1000) throw new exception(MyTypes::exception_strings[MyTypes::CODE_DIGIT]);
+	// if (isExist(accountNumber)) throw MyTypes::exception_strings[MyTypes::NOT_UNIQ_ACCOUNT_NUMBER];
 	//num.balance = 0; 
 	num.code = code;
 	return incoming;
